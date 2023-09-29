@@ -13,7 +13,7 @@ let watchList = [];
  */
 async function fetchFilmData(query) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=8aa19afc&t=${query}&plot=full`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=8aa19afc&t=${query}&plot=full`);
         
         if (!response.ok) {
             throw new Error('Network response was not ok');
